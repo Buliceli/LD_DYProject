@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7t3-Cp-1fH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--发现-->
+        <scene sceneID="G6r-z7-gAK">
+            <objects>
+                <navigationController id="7t3-Cp-1fH" customClass="LDNavController" customModule="LD_DYProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="发现" image="btn_search" selectedImage="btn_search_clicked" id="Ff5-KW-lv9">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="h98-LW-GHg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="737-AI-Uei" kind="relationship" relationship="rootViewController" id="f0f-Pk-eEW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xTD-B7-xVo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-693" y="-79"/>
+        </scene>
+        <!--Discover View Controller-->
+        <scene sceneID="AiT-nA-y1g">
+            <objects>
+                <viewController id="737-AI-Uei" customClass="DiscoverViewController" customModule="LD_DYProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WFL-pU-p6i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="qfI-1i-gyX"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CGa-l8-Fy9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0J0-4E-0cc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117" y="-90"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_search" width="22" height="22"/>
+        <image name="btn_search_clicked" width="22" height="22"/>
+    </resources>
+</document>

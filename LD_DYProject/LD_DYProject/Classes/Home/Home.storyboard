@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l0D-8K-kPz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--直播-->
+        <scene sceneID="4ZK-hE-Zrc">
+            <objects>
+                <navigationController id="l0D-8K-kPz" customClass="LDNavController" customModule="LD_DYProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="直播" image="btn_home_normal" selectedImage="btn_home_selected" id="Opi-kF-gRX">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1fe-Lt-gss">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VML-jq-eo6" kind="relationship" relationship="rootViewController" id="lfY-8c-xjm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oCx-Ca-Xdr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1116" y="68"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="cws-pM-3aR">
+            <objects>
+                <viewController id="VML-jq-eo6" customClass="HomeViewController" customModule="LD_DYProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H55-Qy-Zam">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="cE2-Sb-kbS"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PlK-p2-hx7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JhH-1i-UOd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-297" y="59"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_home_normal" width="24" height="24"/>
+        <image name="btn_home_selected" width="24" height="24"/>
+    </resources>
+</document>

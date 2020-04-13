@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s5B-Fs-Apx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--我的-->
+        <scene sceneID="X0S-gV-uBg">
+            <objects>
+                <navigationController id="s5B-Fs-Apx" customClass="LDNavController" customModule="LD_DYProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的" image="btn_user_normal" selectedImage="btn_user_selected" id="na5-bJ-4be">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xv2-Uq-Ohy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="P7F-EQ-DvY" kind="relationship" relationship="rootViewController" id="aeN-Zg-LTt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h56-BP-W7o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-800" y="-27"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="532-x5-EI4">
+            <objects>
+                <viewController id="P7F-EQ-DvY" customClass="ProfileViewController" customModule="LD_DYProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Oa-p7-hCJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Voc-uP-PoN"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ylv-hn-EL5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8IA-MZ-NWJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_user_normal" width="24" height="24"/>
+        <image name="btn_user_selected" width="24" height="24"/>
+    </resources>
+</document>
