@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		5E3DC31741CF280FAF848411 /* Pods_LD_DYProject_LD_DYProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BEA81B7484B239AC8254BB /* Pods_LD_DYProject_LD_DYProjectUITests.framework */; };
 		73AAA5F4A7FDAD113AC0480F /* Pods_LD_DYProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE11F469C38C19A833D0B62 /* Pods_LD_DYProject.framework */; };
+		A023812724443C1D00223B5C /* LDPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023812624443C1D00223B5C /* LDPageView.swift */; };
+		A023812B24443C4E00223B5C /* LDTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023812A24443C4E00223B5C /* LDTitleStyle.swift */; };
+		A023812D24443C6800223B5C /* LDTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023812C24443C6800223B5C /* LDTitleView.swift */; };
+		A023812F24443C7800223B5C /* LDContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023812E24443C7800223B5C /* LDContentView.swift */; };
+		A0238131244440E200223B5C /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0238130244440E200223B5C /* UIColor-Extension.swift */; };
 		A028DB3D243D59A300C90A58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028DB3C243D59A300C90A58 /* AppDelegate.swift */; };
 		A028DB3F243D59A300C90A58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028DB3E243D59A300C90A58 /* SceneDelegate.swift */; };
 		A028DB44243D59A300C90A58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A028DB42243D59A300C90A58 /* Main.storyboard */; };
@@ -27,6 +32,7 @@
 		A09775F62441D82D008FDC6B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09775F52441D82D008FDC6B /* MainViewController.swift */; };
 		A09775F82441D85F008FDC6B /* LDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09775F72441D85F008FDC6B /* LDNavigationController.swift */; };
 		A09775FB2441E33C008FDC6B /* types.plist in Resources */ = {isa = PBXBuildFile; fileRef = A09775FA2441E33C008FDC6B /* types.plist */; };
+		A097760324443377008FDC6B /* HomeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A097760224443377008FDC6B /* HomeType.swift */; };
 		A0CB1393243DD0920017A2C8 /* LDNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CB1392243DD0920017A2C8 /* LDNavController.swift */; };
 		C66B1392A70441C94EBAA18C /* Pods_LD_DYProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A6077AE201FC96D798CB85 /* Pods_LD_DYProjectTests.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +62,11 @@
 		71DDB4173A2C500581016284 /* Pods-LD_DYProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LD_DYProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-LD_DYProjectTests/Pods-LD_DYProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		79BEA81B7484B239AC8254BB /* Pods_LD_DYProject_LD_DYProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LD_DYProject_LD_DYProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5C9D79BF5FBF4F900C0A40 /* Pods-LD_DYProject-LD_DYProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LD_DYProject-LD_DYProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-LD_DYProject-LD_DYProjectUITests/Pods-LD_DYProject-LD_DYProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A023812624443C1D00223B5C /* LDPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDPageView.swift; sourceTree = "<group>"; };
+		A023812A24443C4E00223B5C /* LDTitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDTitleStyle.swift; sourceTree = "<group>"; };
+		A023812C24443C6800223B5C /* LDTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDTitleView.swift; sourceTree = "<group>"; };
+		A023812E24443C7800223B5C /* LDContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDContentView.swift; sourceTree = "<group>"; };
+		A0238130244440E200223B5C /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		A028DB39243D59A300C90A58 /* LD_DYProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LD_DYProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A028DB3C243D59A300C90A58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A028DB3E243D59A300C90A58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +91,7 @@
 		A09775F52441D82D008FDC6B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A09775F72441D85F008FDC6B /* LDNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDNavigationController.swift; sourceTree = "<group>"; };
 		A09775FA2441E33C008FDC6B /* types.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = types.plist; sourceTree = "<group>"; };
+		A097760224443377008FDC6B /* HomeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeType.swift; sourceTree = "<group>"; };
 		A0CB1392243DD0920017A2C8 /* LDNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDNavController.swift; sourceTree = "<group>"; };
 		C0F4F457F1EDB20F858A2749 /* Pods-LD_DYProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LD_DYProject.debug.xcconfig"; path = "Target Support Files/Pods-LD_DYProject/Pods-LD_DYProject.debug.xcconfig"; sourceTree = "<group>"; };
 		E68EE096068F6368F053EF72 /* Pods-LD_DYProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LD_DYProjectTests.release.xcconfig"; path = "Target Support Files/Pods-LD_DYProjectTests/Pods-LD_DYProjectTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +136,24 @@
 				E68EE096068F6368F053EF72 /* Pods-LD_DYProjectTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A023812424443BD500223B5C /* LDPageView */ = {
+			isa = PBXGroup;
+			children = (
+				A023812A24443C4E00223B5C /* LDTitleStyle.swift */,
+				A023812624443C1D00223B5C /* LDPageView.swift */,
+				A023812C24443C6800223B5C /* LDTitleView.swift */,
+				A023812E24443C7800223B5C /* LDContentView.swift */,
+			);
+			path = LDPageView;
+			sourceTree = "<group>";
+		};
+		A023812524443BFE00223B5C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		A028DB30243D59A300C90A58 = {
@@ -205,6 +235,8 @@
 		A09775DC2441D693008FDC6B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				A023812524443BFE00223B5C /* Common */,
+				A023812424443BD500223B5C /* LDPageView */,
 				A09775E22441D6DC008FDC6B /* Controller */,
 				A09775E12441D6D3008FDC6B /* Extension */,
 			);
@@ -214,8 +246,10 @@
 		A09775DD2441D69B008FDC6B /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				A09775E32441D72B008FDC6B /* HomeViewController.swift */,
-				A09775ED2441D7CE008FDC6B /* Home.storyboard */,
+				A097760124443356008FDC6B /* Other */,
+				A09776002444334F008FDC6B /* Controller */,
+				A09775FF24443349008FDC6B /* Model */,
+				A09775FE24443339008FDC6B /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -250,6 +284,7 @@
 		A09775E12441D6D3008FDC6B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A0238130244440E200223B5C /* UIColor-Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -269,6 +304,37 @@
 				A09775FA2441E33C008FDC6B /* types.plist */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		A09775FE24443339008FDC6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A09775FF24443349008FDC6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A097760224443377008FDC6B /* HomeType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A09776002444334F008FDC6B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A09775E32441D72B008FDC6B /* HomeViewController.swift */,
+				A09775ED2441D7CE008FDC6B /* Home.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A097760124443356008FDC6B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		ED4CC0E20E59D8812C2DCF07 /* Frameworks */ = {
@@ -525,14 +591,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A023812B24443C4E00223B5C /* LDTitleStyle.swift in Sources */,
+				A0238131244440E200223B5C /* UIColor-Extension.swift in Sources */,
 				A09775E42441D72B008FDC6B /* HomeViewController.swift in Sources */,
 				A09775E62441D73F008FDC6B /* RankViewController.swift in Sources */,
+				A097760324443377008FDC6B /* HomeType.swift in Sources */,
 				A0CB1393243DD0920017A2C8 /* LDNavController.swift in Sources */,
 				A09775E82441D758008FDC6B /* ProfileViewController.swift in Sources */,
+				A023812F24443C7800223B5C /* LDContentView.swift in Sources */,
 				A09775EA2441D766008FDC6B /* DiscoverViewController.swift in Sources */,
 				A09775F62441D82D008FDC6B /* MainViewController.swift in Sources */,
 				A028DB3D243D59A300C90A58 /* AppDelegate.swift in Sources */,
 				A028DB3F243D59A300C90A58 /* SceneDelegate.swift in Sources */,
+				A023812724443C1D00223B5C /* LDPageView.swift in Sources */,
+				A023812D24443C6800223B5C /* LDTitleView.swift in Sources */,
 				A09775F82441D85F008FDC6B /* LDNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
