@@ -45,11 +45,18 @@ extension HomeViewController {
         print(titles)
         
         let style: LDTitleStyle = LDTitleStyle()
+        style.isScoreEnable = true
+        style.isShowBottomLine = true
+        style.isNeedScale = true
+        style.isShowCover = true
+        let titles1: [String] = ["手游","单击","联网","棋牌"]
+        let titles2: [String] = ["手游手游","单击单机","联网","棋牌","射击","赛车","象棋","旅行青蛙"]
         var vcs: [UIViewController] = []
-        for _ in 1...4 {
+        for _ in 1...titles2.count {
             vcs.append(UIViewController())
         }
-        let pageView: LDPageView = LDPageView(frame: CGRect(x: 0, y: 64, width: view.frame.width, height: view.frame.height - 64 - 49), titles: ["手游","单击","联网","棋牌"], style: style, childVcs: vcs, parentVc: self)
+        
+        let pageView: LDPageView = LDPageView(frame: CGRect(x: 0, y: 64, width: view.frame.width, height: view.frame.height - 64 - 49), titles:titles2 , style: style, childVcs: vcs, parentVc: self)
         view.addSubview(pageView)
         
     }

@@ -12,22 +12,24 @@ class LDNavController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+     if #available(iOS 13.0, *) {
+        let appearance = UITabBarAppearance()
+        // 设置未被选中的颜色
+        appearance.stackedLayoutAppearance.normal.titleTextAttributes = [
+           NSAttributedString.Key.foregroundColor: UIColor.black
+        ]
+        // 设置被选中时的颜色
+        appearance.stackedLayoutAppearance.selected.titleTextAttributes =
+            [NSAttributedString.Key.foregroundColor : UIColor.orange]
+        self.tabBarItem.standardAppearance = appearance
+        
+     } else {
+        self.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.black], for: .normal)
+        self.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.orange], for: .selected)
+     }
     }
     override var preferredStatusBarStyle: UIStatusBarStyle
         {
         return .lightContent
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
