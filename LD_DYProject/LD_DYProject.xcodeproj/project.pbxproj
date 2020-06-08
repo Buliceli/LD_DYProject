@@ -21,6 +21,17 @@
 		A028DB49243D59A600C90A58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A028DB47243D59A600C90A58 /* LaunchScreen.storyboard */; };
 		A028DB54243D59A600C90A58 /* LD_DYProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028DB53243D59A600C90A58 /* LD_DYProjectTests.swift */; };
 		A028DB5F243D59A600C90A58 /* LD_DYProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028DB5E243D59A600C90A58 /* LD_DYProjectUITests.swift */; };
+		A077A2A5244EA17900673FCC /* LDPageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A077A2A4244EA17900673FCC /* LDPageCollectionView.swift */; };
+		A077A2A7244EA24300673FCC /* LDPageCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A077A2A6244EA24300673FCC /* LDPageCollectionViewLayout.swift */; };
+		A077A2AA244EDFBC00673FCC /* Emitterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A077A2A9244EDFBC00673FCC /* Emitterable.swift */; };
+		A077A2AC244EE5DB00673FCC /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A077A2AB244EE5DB00673FCC /* NibLoadable.swift */; };
+		A077A2AE244EE71500673FCC /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A077A2AD244EE71500673FCC /* DemoView.swift */; };
+		A077A2B0244EE72A00673FCC /* DemoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A077A2AF244EE72A00673FCC /* DemoView.xib */; };
+		A077A2B3244EECDA00673FCC /* QHNormalEmotionSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = A077A2B1244EECDA00673FCC /* QHNormalEmotionSort.plist */; };
+		A077A2B4244EECDA00673FCC /* QHSohuGifSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = A077A2B2244EECDA00673FCC /* QHSohuGifSort.plist */; };
+		A077A2B6244EEE1C00673FCC /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = A077A2B5244EEE1C00673FCC /* Const.swift */; };
+		A077A2B8244EF19E00673FCC /* AnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A077A2B7244EF19E00673FCC /* AnchorViewController.swift */; };
+		A077A2BB244EF28700673FCC /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A077A2BA244EF28700673FCC /* NetworkTools.swift */; };
 		A09775E42441D72B008FDC6B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09775E32441D72B008FDC6B /* HomeViewController.swift */; };
 		A09775E62441D73F008FDC6B /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09775E52441D73F008FDC6B /* RankViewController.swift */; };
 		A09775E82441D758008FDC6B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09775E72441D758008FDC6B /* ProfileViewController.swift */; };
@@ -80,6 +91,17 @@
 		A028DB5A243D59A600C90A58 /* LD_DYProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LD_DYProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A028DB5E243D59A600C90A58 /* LD_DYProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LD_DYProjectUITests.swift; sourceTree = "<group>"; };
 		A028DB60243D59A600C90A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A077A2A4244EA17900673FCC /* LDPageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDPageCollectionView.swift; sourceTree = "<group>"; };
+		A077A2A6244EA24300673FCC /* LDPageCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDPageCollectionViewLayout.swift; sourceTree = "<group>"; };
+		A077A2A9244EDFBC00673FCC /* Emitterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emitterable.swift; sourceTree = "<group>"; };
+		A077A2AB244EE5DB00673FCC /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		A077A2AD244EE71500673FCC /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
+		A077A2AF244EE72A00673FCC /* DemoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoView.xib; sourceTree = "<group>"; };
+		A077A2B1244EECDA00673FCC /* QHNormalEmotionSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHNormalEmotionSort.plist; sourceTree = "<group>"; };
+		A077A2B2244EECDA00673FCC /* QHSohuGifSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHSohuGifSort.plist; sourceTree = "<group>"; };
+		A077A2B5244EEE1C00673FCC /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		A077A2B7244EF19E00673FCC /* AnchorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorViewController.swift; sourceTree = "<group>"; };
+		A077A2BA244EF28700673FCC /* NetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		A09775E32441D72B008FDC6B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A09775E52441D73F008FDC6B /* RankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
 		A09775E72441D758008FDC6B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +167,8 @@
 				A023812624443C1D00223B5C /* LDPageView.swift */,
 				A023812C24443C6800223B5C /* LDTitleView.swift */,
 				A023812E24443C7800223B5C /* LDContentView.swift */,
+				A077A2A4244EA17900673FCC /* LDPageCollectionView.swift */,
+				A077A2A6244EA24300673FCC /* LDPageCollectionViewLayout.swift */,
 			);
 			path = LDPageView;
 			sourceTree = "<group>";
@@ -152,6 +176,8 @@
 		A023812524443BFE00223B5C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A077A2B5244EEE1C00673FCC /* Const.swift */,
+				A077A2A8244EDF9B00673FCC /* Protocols */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -181,6 +207,7 @@
 		A028DB3B243D59A300C90A58 /* LD_DYProject */ = {
 			isa = PBXGroup;
 			children = (
+				A077A2B9244EF26D00673FCC /* Tools */,
 				A09775F92441E316008FDC6B /* Resource */,
 				A09775DA2441D67B008FDC6B /* Classes */,
 				A028DB3C243D59A300C90A58 /* AppDelegate.swift */,
@@ -210,6 +237,23 @@
 				A028DB60243D59A600C90A58 /* Info.plist */,
 			);
 			path = LD_DYProjectUITests;
+			sourceTree = "<group>";
+		};
+		A077A2A8244EDF9B00673FCC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A077A2A9244EDFBC00673FCC /* Emitterable.swift */,
+				A077A2AB244EE5DB00673FCC /* NibLoadable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A077A2B9244EF26D00673FCC /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A077A2BA244EF28700673FCC /* NetworkTools.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		A09775DA2441D67B008FDC6B /* Classes */ = {
@@ -277,6 +321,8 @@
 			children = (
 				A09775E72441D758008FDC6B /* ProfileViewController.swift */,
 				A09775F32441D7FE008FDC6B /* Profile.storyboard */,
+				A077A2AD244EE71500673FCC /* DemoView.swift */,
+				A077A2AF244EE72A00673FCC /* DemoView.xib */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -301,6 +347,8 @@
 		A09775F92441E316008FDC6B /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				A077A2B1244EECDA00673FCC /* QHNormalEmotionSort.plist */,
+				A077A2B2244EECDA00673FCC /* QHSohuGifSort.plist */,
 				A09775FA2441E33C008FDC6B /* types.plist */,
 			);
 			path = Resource;
@@ -325,6 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				A09775E32441D72B008FDC6B /* HomeViewController.swift */,
+				A077A2B7244EF19E00673FCC /* AnchorViewController.swift */,
 				A09775ED2441D7CE008FDC6B /* Home.storyboard */,
 			);
 			path = Controller;
@@ -456,10 +505,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A077A2B4244EECDA00673FCC /* QHSohuGifSort.plist in Resources */,
 				A09775F02441D7E5008FDC6B /* Rank.storyboard in Resources */,
 				A028DB49243D59A600C90A58 /* LaunchScreen.storyboard in Resources */,
+				A077A2B3244EECDA00673FCC /* QHNormalEmotionSort.plist in Resources */,
 				A09775FB2441E33C008FDC6B /* types.plist in Resources */,
 				A028DB46243D59A600C90A58 /* Assets.xcassets in Resources */,
+				A077A2B0244EE72A00673FCC /* DemoView.xib in Resources */,
 				A028DB44243D59A300C90A58 /* Main.storyboard in Resources */,
 				A09775EE2441D7CE008FDC6B /* Home.storyboard in Resources */,
 				A09775F42441D7FE008FDC6B /* Profile.storyboard in Resources */,
@@ -591,6 +643,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A077A2A7244EA24300673FCC /* LDPageCollectionViewLayout.swift in Sources */,
 				A023812B24443C4E00223B5C /* LDTitleStyle.swift in Sources */,
 				A0238131244440E200223B5C /* UIColor-Extension.swift in Sources */,
 				A09775E42441D72B008FDC6B /* HomeViewController.swift in Sources */,
@@ -598,14 +651,21 @@
 				A097760324443377008FDC6B /* HomeType.swift in Sources */,
 				A0CB1393243DD0920017A2C8 /* LDNavController.swift in Sources */,
 				A09775E82441D758008FDC6B /* ProfileViewController.swift in Sources */,
+				A077A2AC244EE5DB00673FCC /* NibLoadable.swift in Sources */,
 				A023812F24443C7800223B5C /* LDContentView.swift in Sources */,
+				A077A2BB244EF28700673FCC /* NetworkTools.swift in Sources */,
 				A09775EA2441D766008FDC6B /* DiscoverViewController.swift in Sources */,
+				A077A2B8244EF19E00673FCC /* AnchorViewController.swift in Sources */,
+				A077A2A5244EA17900673FCC /* LDPageCollectionView.swift in Sources */,
 				A09775F62441D82D008FDC6B /* MainViewController.swift in Sources */,
+				A077A2AE244EE71500673FCC /* DemoView.swift in Sources */,
 				A028DB3D243D59A300C90A58 /* AppDelegate.swift in Sources */,
 				A028DB3F243D59A300C90A58 /* SceneDelegate.swift in Sources */,
+				A077A2AA244EDFBC00673FCC /* Emitterable.swift in Sources */,
 				A023812724443C1D00223B5C /* LDPageView.swift in Sources */,
 				A023812D24443C6800223B5C /* LDTitleView.swift in Sources */,
 				A09775F82441D85F008FDC6B /* LDNavigationController.swift in Sources */,
+				A077A2B6244EEE1C00673FCC /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
