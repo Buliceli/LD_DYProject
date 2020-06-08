@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GiftListView" customModule="LD_DYProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="323"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="赠送礼物" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GH-Kv-Gs1">
+                    <rect key="frame" x="8" y="8" width="41" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pr0-bP-8eP">
+                    <rect key="frame" x="332" y="3" width="45" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="U4q-Gx-D02"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="充值">
+                        <color key="titleColor" red="0.81176470590000005" green="0.58431372550000005" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="余额: 0帆比/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6v-bW-Tpy">
+                    <rect key="frame" x="256" y="8" width="68" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c8N-i5-U0o">
+                    <rect key="frame" x="0.0" y="38" width="385" height="1"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Zdy-1z-a8o"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFz-fT-Chm">
+                    <rect key="frame" x="331" y="285" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.81176470590000005" green="0.58431372550000005" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="2Dy-bH-eEo"/>
+                        <constraint firstAttribute="height" constant="30" id="vk0-UO-0L6"/>
+                    </constraints>
+                    <state key="normal" title="赠送">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="sendGiftBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="o0N-zv-1YS"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="赠给: 滋滋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ob4-57-pa1">
+                    <rect key="frame" x="8" y="298" width="65" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmo-MK-Ndk">
+                    <rect key="frame" x="0.0" y="39" width="385" height="246"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="nFz-fT-Chm" secondAttribute="bottom" constant="8" id="1YT-tJ-EzD"/>
+                <constraint firstItem="p6v-bW-Tpy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="2vR-d3-OgH"/>
+                <constraint firstItem="nFz-fT-Chm" firstAttribute="top" secondItem="rmo-MK-Ndk" secondAttribute="bottom" id="5q2-1C-8Fl"/>
+                <constraint firstItem="6GH-Kv-Gs1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="9KL-ea-DnB"/>
+                <constraint firstItem="c8N-i5-U0o" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="E7o-xW-APt"/>
+                <constraint firstItem="pr0-bP-8eP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="GJt-ct-iFd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="c8N-i5-U0o" secondAttribute="trailing" id="KeI-w9-YsI"/>
+                <constraint firstItem="rmo-MK-Ndk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Kyo-XZ-7Xm"/>
+                <constraint firstItem="c8N-i5-U0o" firstAttribute="top" secondItem="pr0-bP-8eP" secondAttribute="bottom" constant="8" id="UUw-JP-W8N"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ob4-57-pa1" secondAttribute="bottom" constant="8" id="hXd-QY-EuE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nFz-fT-Chm" secondAttribute="trailing" constant="8" id="n7J-BJ-WbL"/>
+                <constraint firstItem="6GH-Kv-Gs1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="ntA-MA-mwJ"/>
+                <constraint firstItem="ob4-57-pa1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="pBQ-z7-t0j"/>
+                <constraint firstItem="rmo-MK-Ndk" firstAttribute="top" secondItem="c8N-i5-U0o" secondAttribute="bottom" id="qyn-yX-36O"/>
+                <constraint firstItem="p6v-bW-Tpy" firstAttribute="height" secondItem="pr0-bP-8eP" secondAttribute="height" multiplier="0.592593" id="rMe-kg-zOy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rmo-MK-Ndk" secondAttribute="trailing" id="wVY-4B-HFr"/>
+                <constraint firstItem="pr0-bP-8eP" firstAttribute="leading" secondItem="p6v-bW-Tpy" secondAttribute="trailing" constant="8" id="xX2-2i-0gi"/>
+                <constraint firstAttribute="trailing" secondItem="pr0-bP-8eP" secondAttribute="trailing" constant="8" id="zEI-ML-6uC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="giftView" destination="rmo-MK-Ndk" id="Mjh-OL-y0Y"/>
+                <outlet property="sendGiftBtn" destination="nFz-fT-Chm" id="wcv-zh-Cyz"/>
+            </connections>
+            <point key="canvasLocation" x="110.86956521739131" y="-49.888392857142854"/>
+        </view>
+    </objects>
+</document>

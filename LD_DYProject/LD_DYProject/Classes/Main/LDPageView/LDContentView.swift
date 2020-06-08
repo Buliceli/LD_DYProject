@@ -132,10 +132,13 @@ extension LDContentView: UICollectionViewDelegate {
     }
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         delegate?.contentViewEndScroll(self)
+        scrollView.isScrollEnabled = true
     }
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if !decelerate {
             delegate?.contentViewEndScroll(self)
+        }else{
+            scrollView.isScrollEnabled = false
         }
     }
 }

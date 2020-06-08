@@ -13,10 +13,13 @@ protocol LDPageCollectionViewDataSource: class {
     func pageCollectionView(_ collectionView: LDPageCollectionView, numberOfItemInSection section: Int) -> Int
     func pageCollectionView(_ pageCollectionView: LDPageCollectionView, _ collectionView: UICollectionView, cellForItem indexPath: IndexPath) -> UICollectionViewCell
 }
-
+protocol LDPageCollectionViewDelegate: class {
+    func pageCollectionView(_ pageCollectionView: LDPageCollectionView, didSelectItemAt indexPath: IndexPath)
+}
 class LDPageCollectionView: UIView {
 
     weak var dataSource: LDPageCollectionViewDataSource?
+    weak var delegate: LDPageCollectionViewDelegate?
     //MARK: -定义属性
     fileprivate var titles: [String]
     fileprivate var style: LDTitleStyle
@@ -49,7 +52,7 @@ extension LDPageCollectionView{
         titleView = LDTitleView(frame: titleFrame, titles: titles, style: style)
         titleView?.delegate = self
         addSubview(titleView!)
-        titleView?.backgroundColor = UIColor.randomColor()
+        //titleView?.backgroundColor = UIColor.randomColor()
         
         //创建UIPageControl
         let pageControlHeight: CGFloat = 20
@@ -58,8 +61,10 @@ extension LDPageCollectionView{
         pageContrl = UIPageControl(frame: pageControlFrame)
         pageContrl?.numberOfPages = 4
         pageContrl?.isEnabled = false
+        pageContrl?.pageIndicatorTintColor = .lightGray
+        pageContrl?.currentPageIndicatorTintColor = .orange
         addSubview(pageContrl!)
-        pageContrl?.backgroundColor = UIColor.randomColor()
+        pageContrl?.backgroundColor = UIColor.black
         
         //创建UICollectionView
         let collectionViewY = isTitleInTop ? (style.titleHeight) : 0
@@ -70,7 +75,7 @@ extension LDPageCollectionView{
         collectionView?.isPagingEnabled = true
         collectionView?.showsHorizontalScrollIndicator = false
         addSubview(collectionView!)
-        collectionView?.backgroundColor = UIColor.randomColor()
+        collectionView?.backgroundColor = UIColor.black
     }
 }
 //MARK: - LDTitleViewProtocol
@@ -101,6 +106,10 @@ extension LDPageCollectionView: UICollectionViewDataSource{
 }
 //MARK: - UICollectionViewDelegate
 extension LDPageCollectionView: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+         delegate?.pageCollectionView(self, didSelectItemAt: indexPath)
+
+    }
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         scrollViewEndScroll()
     }
@@ -138,5 +147,8 @@ extension LDPageCollectionView {
     }
     func register(nib: UINib,identifier: String){
         collectionView?.register(nib, forCellWithReuseIdentifier: identifier)
+    }
+    func reloadData() {
+        collectionView?.reloadData()
     }
 }

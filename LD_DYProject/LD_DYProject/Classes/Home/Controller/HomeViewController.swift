@@ -46,9 +46,11 @@ extension HomeViewController {
         style.isScoreEnable = true
         let pageFrame = CGRect(x: 0, y: kNavigationBarH, width: kScreenW, height: kScreenH - kNavigationBarH - kTabbarH)
 
-        var vcs: [UIViewController] = []
-        for _ in 1...titles.count {
-            vcs.append(UIViewController())
+        var vcs: [AnchorViewController] = []
+        for type in homeTypes {
+            let anchorVc = AnchorViewController()
+            anchorVc.homeType = type
+            vcs.append(anchorVc)
         }
         
         let pageView: LDPageView = LDPageView(frame: pageFrame, titles:titles , style: style, childVcs: vcs, parentVc: self)
