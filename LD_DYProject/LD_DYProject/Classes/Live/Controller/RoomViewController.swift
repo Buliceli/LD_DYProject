@@ -10,8 +10,6 @@ import UIKit
 private let kChatToolsViewHeight : CGFloat = 44
 private let kGiftlistViewHeight : CGFloat = kScreenH * 0.5
 private let kChatContentViewHeight : CGFloat = 200
-
-
 class RoomViewController: UIViewController,Emitterable {
 
     @IBOutlet weak var bgImageView: UIImageView!
@@ -23,6 +21,7 @@ class RoomViewController: UIViewController,Emitterable {
     fileprivate lazy var chatToolsView: ChatToolsView = ChatToolsView.loadFromNib()
     fileprivate lazy var giftListView : GiftListView = GiftListView.loadFromNib()
     fileprivate lazy var chatContentView : ChatContentView = ChatContentView.loadFromNib()
+    fileprivate lazy var giftContentView: LDGiftContainerView = LDGiftContainerView()
     fileprivate lazy var socket: LDSocket = LDSocket(addr: "192.168.0.126", port: 7777)
     fileprivate var heartBeatTimer : Timer?
     override func viewDidLoad() {
@@ -55,6 +54,7 @@ extension RoomViewController {
     fileprivate func setupUI(){
         setupBlurView()
         setupBottomView()
+        setupSendGiftView()
     }
     fileprivate func setupBlurView(){
         let blur = UIBlurEffect(style: .dark)
@@ -86,6 +86,11 @@ extension RoomViewController {
         giftListView.delegate = self
         
     }
+    fileprivate func setupSendGiftView(){
+        giftContentView.frame = CGRect(x: 0, y: kScreenH - 55 - 90 - 300, width: 250, height: 90)
+        giftContentView.backgroundColor = UIColor.lightGray
+        view.addSubview(giftContentView)
+    }
 }
 //MARK: - 事件监听
 extension RoomViewController{
@@ -98,6 +103,8 @@ extension RoomViewController{
         UIView.animate(withDuration: 0.25, animations: {
           self.giftListView.frame.origin.y = kScreenH
         })
+//        let gift1 = LDGiftModel(senderName: "LDD", senderURL: "icon1", giftName: "火箭", giftURL: "prop_f")
+//        giftContentView.showGiftModel(gift1)
     }
     @IBAction func bottomMenuClick(_ sender: UIButton){
         print("--------------\(sender.tag)")
@@ -143,7 +150,6 @@ extension RoomViewController {
         }
     }
 }
-
 //MARK: -监听用户输入的内容
 extension RoomViewController: ChatToolsViewDelegate,GiftListViewDelegate{
     func giftListView(giftView: GiftListView, giftModel: GiftModel) {
