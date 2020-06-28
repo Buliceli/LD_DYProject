@@ -9,9 +9,9 @@
 import UIKit
 
 enum LDGiftChannelViewState {
-    case idle //闲置
-    case animationg //执行动画中
-    case willEnd    //将要结束
+    case idle         //闲置
+    case animationg   //执行动画中
+    case willEnd      //将要结束
     case endAnimating //执行结束动画中
 }
 class LDGiftChannelView: UIView {
@@ -25,7 +25,6 @@ class LDGiftChannelView: UIView {
     fileprivate var cacheNumber : Int = 0
     fileprivate var currentNumber: Int = 0
     var complectionCallback: ((LDGiftChannelView)->Void)?
-    
     var state: LDGiftChannelViewState = .idle
     var giftModel: LDGiftModel? {
         didSet{
@@ -70,18 +69,18 @@ extension LDGiftChannelView{
         }
     }
     fileprivate func performDigitAnimation(){
-        currentNumber += 1
-        digitLabel.text = "x\(currentNumber)"
-        digitLabel.showDigitAnimation {
+         currentNumber += 1
+         digitLabel.text = "x\(currentNumber)"
+         digitLabel.showDigitAnimation {
             
-        if self.cacheNumber > 0 {
+         if self.cacheNumber > 0 {
             self.cacheNumber -= 1
             self.performDigitAnimation()
-        }else{
+         }else{
             self.state = .willEnd
             self.perform(#selector(self.performEndAnimation), with: nil, afterDelay: 3.0)
-        }
-        }
+         }
+       }
     }
     @objc fileprivate func performEndAnimation(){
         UIView.animate(withDuration: 0.25, animations: {
@@ -105,7 +104,6 @@ extension LDGiftChannelView{
     class func loadFromNib() -> LDGiftChannelView{
         return Bundle.main.loadNibNamed("LDGiftChannelView", owner: nil, options: nil)?.first as! LDGiftChannelView
     }
-    
     func addOnceToCache() {
         if state == .willEnd {
             performDigitAnimation()

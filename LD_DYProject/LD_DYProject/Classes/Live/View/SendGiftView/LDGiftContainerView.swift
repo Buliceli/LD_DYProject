@@ -10,8 +10,8 @@ import UIKit
 private let kChannelCount = 2
 private let kChannelViewH : CGFloat = 40
 private let kChannelMargin : CGFloat = 10
-class LDGiftContainerView: UIView {
 
+class LDGiftContainerView: UIView {
     // MARK: 定义属性
       fileprivate lazy var channelViews : [LDGiftChannelView] = [LDGiftChannelView]()
       fileprivate lazy var cacheGiftModels : [LDGiftModel] = [LDGiftModel]()
@@ -62,8 +62,6 @@ extension LDGiftContainerView {
         }
     }
 }
-
-
 extension LDGiftContainerView{
     func showGiftModel(_ giftModel: LDGiftModel) {
         //判断正在忙的chanelView和赠送的新礼物的(userName/giftName)是否相等
